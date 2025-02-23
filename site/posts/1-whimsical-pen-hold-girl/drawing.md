@@ -8,7 +8,7 @@ description:
 category: sketch
 tags: [sketch, caricature, drawings]
 cta: playful
-site: blogsite
+site: drawings_jenishjain_in
 thumb: 'https://res.cloudinary.com/jenishjain/image/upload/v1740302113/drawings/whimsical_pen_hold_girl.jpg?resize1800x2400'
 ---
 
