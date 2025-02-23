@@ -6,4 +6,4 @@ build over MDX and preact
 
 ## deployment status
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/e5f62391-a2de-4aa3-a239-70cd1dad8858/deploy-status)](https://app.netlify.com/sites/jenishjain-blog/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/6142976e-1d89-4558-b7cd-7940e175a260/deploy-status)](https://app.netlify.com/sites/jenishjain-drawings/deploys)

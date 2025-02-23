@@ -1,8 +1,8 @@
 ---
 date: 2025-02-22
 title: >
-  Whimsical Pen Hold girl
-seo_title: Whimsical Pen Hold girl
+  Whimsical Pen Holding girl
+seo_title: Whimsical Pen Holding girl
 slug: whimsical-pen-hold-girl
 description: 
 category: sketch
