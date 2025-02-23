@@ -1,0 +1,75 @@
+{% extends "default.njk" %}
+
+{% block seo %}
+<title>{% if seo_title %}{{ seo_title }}{% else %}{{ title }}{% endif %}</title>
+
+<link rel="canonical" href="{{ siteUrl }}/{{ slug }}/" />
+<meta name="description" content="{{ description }}" />
+{% if image %}
+<meta name="image" content="{{ image | cloudinary(page.inputPath, 1200) }}" />
+{% else %}
+<meta name="image" content="{{ title | seoImage }}" />
+{% endif %}
+
+<meta property="og:type" content="article" />
+<meta property="og:url" content="{{ siteUrl }}/{{ slug }}/" />
+<meta property="og:description" content="{{ description }}" />
+{% if image %}
+<meta property="og:image" content="{{ image | cloudinary(page.inputPath, 1200) }}" />
+{% else %}
+<meta property="og:image" content="{{ title | seoImage }}" />
+{% endif %}
+
+<meta name="twitter:dnt" content="on" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:creator" content="@jenishjain6" />
+<meta name="twitter:title" content="{% if seo_title %}{{ seo_title }}{% else %}{{ title }}{% endif %}" />
+<meta name="twitter:description" content="{{ description }}" />
+{% if image %}
+<meta name="twitter:image" content="{{ image | cloudinary(page.inputPath, 1200) }}" />
+{% else %}
+<meta name="twitter:image" content="{{ title | seoImage }}" />
+{% endif %}
+{% endblock %}
+
+
+{% block details %}
+<div class="details">
+  <figure class="author">
+    <img
+      src="https://res.cloudinary.com/jenishjain/image/upload/q_auto,f_auto,c_thumb,w_260,h_260,g_faces,z_0.55/v1700920184/portfolio/images/jenishjain-with-chopsticks.jpg"
+      alt="Jenish Jain" />
+    <figcaption>written by Jenish</figcaption>
+  </figure>
+</div>
+{% endblock %}
+
+{% block sidebar %}
+<div class="sidebar">
+  <div class="sticky-sidebar">
+    <div class="newsletter-nudge">
+      <p>
+        Hey, friends! I share posts like these regularly in my
+        newsletter.
+        <strong
+          >Sign up to get my best stuff direct to your inbox.</strong
+        >
+      </p>
+      <a href="/newsletter/" class="button">I love stuff!</a>
+    </div>
+
+    <details class="table-of-contents" open>
+      <summary>Table of Contents</summary>
+
+      {{ content | toc | safe }}
+    </details>
+  </div>
+</div>
+<script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
+  data-id="jenishjain" data-description="Support me on Buy me a pizza!" data-message="Buy me a pizza!"
+  data-color="#5F7FFF" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+{% endblock %}
+
+{% block scripts %}
+<script src="/scripts/post.min.js"></script>
+{% endblock %}
