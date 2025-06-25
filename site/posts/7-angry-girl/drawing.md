@@ -9,9 +9,9 @@ category: sketch
 tags: [sketch, caricature, drawings]
 cta: playful
 site: drawings_jenishjain_in
-thumb: 'https://res.cloudinary.com/jenishjain/image/upload/v1750855194/drawings/angry_girl.heic'
+thumb: 'https://res.cloudinary.com/jenishjain/image/upload/v1750855433/drawings/angry_girl.jpg'
 ---
 
-![Shocked Man](https://res.cloudinary.com/jenishjain/image/upload/v1750855194/drawings/angry_girl.heic)
+![Shocked Man](https://res.cloudinary.com/jenishjain/image/upload/v1750855433/drawings/angry_girl.jpg)
 
 inspired from [cameronmarkart](https://www.instagram.com/cameronmarkart/p/CSqZEmntyu3/?img_index=1)
